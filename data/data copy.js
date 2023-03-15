@@ -6,7 +6,7 @@ const allQuestions = [
             "PHP: Hypertext Preprocessor",
             "Private Home Page",
         ],
-        time: 30,
+        time: 10,
         multiple: false,
         answer: "2"
     },
@@ -17,7 +17,7 @@ const allQuestions = [
             "echo 'Hello World';",
             "'Hello World'",
         ],
-        time: 30,
+        time: 10,
         multiple: false,
         answer: "2"
     },
@@ -28,7 +28,7 @@ const allQuestions = [
             "Request.QueryString",
             "$_GET[]",
         ],
-        time: 30,
+        time: 10,
         multiple: false,
         answer: "3"
     },
@@ -38,7 +38,7 @@ const allQuestions = [
             "True",
             "False",
         ],
-        time: 30,
+        time: 10,
         multiple: false,
         answer: "2"
     },
@@ -50,7 +50,7 @@ const allQuestions = [
             "Protected",
             "$this",
         ],
-        time: 30,
+        time: 10,
         multiple: false,
         answer: "4"
     },
@@ -62,7 +62,7 @@ const allQuestions = [
             "parent::construct()",
             "parent::__construct()",
         ],
-        time: 30,
+        time: 10,
         multiple: false,
         answer: "4"
     },
@@ -74,7 +74,7 @@ const allQuestions = [
             "htmlentities",
             "htmlelements",
         ],
-        time: 30,
+        time: 10,
         multiple: false,
         answer: "3"
     },
@@ -86,7 +86,7 @@ const allQuestions = [
             ":",
             "^",
         ],
-        time: 30,
+        time: 10,
         multiple: false,
         answer: "2"
     },
@@ -98,7 +98,7 @@ const allQuestions = [
             "final", 
             "static",
         ],
-        time: 30,
+        time: 10,
         multiple: false,
         answer: "3"
     },
@@ -110,7 +110,7 @@ const allQuestions = [
             "New line",
             "None of the above",
         ],
-        time: 30,
+        time: 10,
         multiple: false,
         answer: "1"
     },
@@ -122,7 +122,7 @@ const allQuestions = [
             "<?php>...</?>",
             "<script>...</script>",
         ],
-        time: 30,
+        time: 10,
         multiple: false,
         answer: "1"
     },
