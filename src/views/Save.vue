@@ -2,7 +2,7 @@
     <section class="section" id="score-saving-section">
         <div class="container">
         <div id="end" class="flex-center flex-column">
-            <h1 id="finalScore">0</h1>
+            <h1 id="finalScore">{{ currentScore }}</h1>
             <form @submit.prevent="saveResult" class="end-form-container">
                 <h2 id="end-text">Save your score?</h2>
                 <input v-model="name" type="text" id="username" placeholder="Enter your name">
@@ -25,9 +25,11 @@
     const name = ref('');
     const router = useRouter();
 
+    let { currentScore } = storeToRefs(quizStore);
+
     function saveResult() {
         console.log(name.value);
         quizStore.saveScore(name.value);
-        router.push('/home');
+        router.push('/');
     }
 </script>

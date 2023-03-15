@@ -8,7 +8,7 @@ import { storeToRefs } from 'pinia';
 const quizStore = useQuizStore();
 const router = useRouter();
 
-const allQuestions = quizStore.questions;
+const allQuestions = [...quizStore.questions];
 
 const questionIndx = ref(0);
 const question = ref(null);
@@ -47,7 +47,7 @@ function checkAnswer(idx) {
         score.value += 100;
         classes[idx].correct = true;
     } else {
-        if (idx) classes[idx].incorrect = true;
+        if (idx != null) classes[idx].incorrect = true;
         console.log(parseInt(question.value.answer));
         classes[parseInt(question.value.answer) - 1].correct = true;
     }
@@ -88,10 +88,6 @@ function newQuestion() {
     timerBarIntervalId = setInterval(() => {
         timerLength.value = parseInt((timer.value / question.value.time) * 100);
     }, 1000);
-
-    // finalTimer = setTimeout(() => {
-    //     checkAnswer();
-    // }, question.value.time);
 }
 </script>
 
